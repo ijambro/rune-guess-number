@@ -56,7 +56,7 @@ export default function App() {
       const guessInt = parseInt(guess);
       console.log("App: guessing", guessInt);
       Rune.actions.submitGuess(guessInt);
-      setGuess(undefined);
+      setGuess("");
     }
   }
 
