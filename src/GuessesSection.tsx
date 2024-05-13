@@ -31,7 +31,7 @@ export default function GuessesSection(props: Props) {
       g?.value
     } ${guessResponseToEmoji(g?.response)}`;
 
-    return <div>{desc}</div>;
+    return <div key={`${g.playerId}-${g?.value}`}>{desc}</div>;
   }
 
   return <div id="guessesSection">{showAllGuesses()}</div>;
